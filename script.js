@@ -1,61 +1,23 @@
-// Handle form submission
-function handleFormSubmission() {
-    const form = document.getElementById('contact-form');
-    form.addEventListener('submit', function (event) {
-        event.preventDefault();
-        alert('Thank you for your message!');
-    });
 
-    form.addEventListener('focusin', (event) => {
-        event.target.classList.add('focused');
-    });
+const textElement = document.getElementById('text');
+const newElementContainer = document.getElementById('newElementContainer');
 
-    form.addEventListener('focusout', (event) => {
-        event.target.classList.remove('focused');
-    });
-}
+document.getElementById('changeTextButton').addEventListener('click', () => {
+    textElement.textContent = 'Your text has been changed!';
+});
 
-// Style testimonials and add hover effects
-function styleTestimonials() {
-    const testimonials = document.querySelectorAll('.testimonial');
-    testimonials.forEach(testimonial => {
-        testimonial.classList.add('testimonial');
-        testimonial.addEventListener('mouseover', () => {
-            testimonial.style.backgroundColor = 'lightblue';
-            testimonial.style.color = 'black';
-        });
-        testimonial.addEventListener('mouseout', () => {
-            testimonial.style.backgroundColor = '';
-            testimonial.style.color = '';
-        });
-    });
-}
+document.getElementById('toggleHighlightButton').addEventListener('click', () => {
+    textElement.classList.toggle('highlight');
+});
 
-// Toggle FAQ answers
-function setupFAQToggle() {
-    document.querySelectorAll('.faq-question').forEach(question => {
-        question.addEventListener('click', () => {
-            const answer = question.nextElementSibling;
-            answer.classList.toggle('faq-answer');
-        });
-    });
-}
+document.getElementById('addElementButton').addEventListener('click', () => {
+    const newElement = document.createElement('p');
+    newElement.textContent = 'You have added a new element!';
+    newElementContainer.appendChild(newElement);
+});
 
-// Add container styling dynamically
-function styleContainers() {
-    const containers = document.querySelectorAll('.services-container, .testimonials-container, .contact-form-container');
-    containers.forEach(container => {
-        container.classList.add('container');
-    });
-}
-
-// Initialize all functionality
-function initialize() {
-    handleFormSubmission();
-    styleTestimonials();
-    setupFAQToggle();
-    styleContainers(); // Apply container styles
-}
-
-// Run the initialization function when the DOM is fully loaded
-document.addEventListener('DOMContentLoaded', initialize);
+document.getElementById('removeElementButton').addEventListener('click', () => {
+    if (newElementContainer.lastChild) {
+        newElementContainer.removeChild(newElementContainer.lastChild);
+    }
+});

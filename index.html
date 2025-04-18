@@ -3,173 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nido_Networks</title>
+    <title>Dynamic Content Example</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>Introduction to JavaScript and DOM Manipulation</h1>
+    </header>
     <main>
-        <header>
-            <nav class="navbar">
-                <h1>Nido Networks Limited</h1>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#packages">Packages</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-
-                </ul>
-            </nav>
-        </header>
-        <section id="home">
-            <div class="home-card">
-                <img src="./images/Logo.jpg" alt="Nido Networks Logo" class="home-logo">
-                <div class="home-content">
-                    <h2>Welcome to Nido Networks</h2>
-                    <p>Your one-stop solution for high-speed internet.</p>
-                    <p>At Nido Networks Limited, we are dedicated to delivering exceptional internet services to meet your needs. Whether you're working from home, streaming your favorite shows, or gaming online, we've got you covered.</p>
-                    <ul>
-                        <li>📡 Reliable and fast internet connections.</li>
-                        <li>🌐 Wide coverage across urban and rural areas.</li>
-                        <li>💼 Tailored solutions for businesses and individuals.</li>
-                        <li>📱 Easy-to-use mobile app for managing your account.</li>
-                    </ul>
-                    <p>Join thousands of satisfied customers and experience the difference with Nido Networks Limited. Stay connected, stay ahead!</p>
-                </div>
-            </div>
+        <section>
+            <p class="dynamic-text" id="text">This is your original text.</p>
+            <button id="changeTextButton">Change Text</button>
+            <button id="toggleHighlightButton">Toggle Highlight</button>
+            <button id="addElementButton">Add Element</button>
+            <button id="removeElementButton">Remove Element</button>
         </section>
-        <section id="about">
-            <h2>About Us</h2>
-            <div class="about-container">
-                <p>Nido Networks Limited is a leading Internet Service Provider committed to delivering reliable, high-speed internet solutions to homes and businesses. With years of experience in the industry, we pride ourselves on offering exceptional customer service and cutting-edge technology to keep you connected.</p>
-                <p>Our mission is to bridge the digital divide by providing affordable and secure internet access to urban and rural communities alike. We believe in empowering individuals and businesses to achieve their goals through seamless connectivity.</p>
-                <p>Join us on our journey to redefine internet services and experience the difference with Nido Networks Limited.</p>
-            </div>
-        </section>
-        <section id="services">
-            <h2>Our Services</h2>
-            <div class="services-container">
-                <div class="service-item">
-                    <span>🚀</span>
-                    <p>High-Speed Internet</p>
-                </div>
-                <div class="service-item">
-                    <span>📞</span>
-                    <p>24/7 Customer Support</p>
-                </div>
-                <div class="service-item">
-                    <span>💰</span>
-                    <p>Affordable Plans</p>
-                </div>
-                <div class="service-item">
-                    <span>🔒</span>
-                    <p>Secure Connection</p>
-                </div>
-                <div class="service-item">
-                    <span>🛠️</span>
-                    <p>Free Installation</p>
-                </div>
-            </div>
-        </section>
-        <section id="packages">
-            <h2>Our Packages</h2>
-            <div class="packages-container">
-                <div class="package-item">
-                    <h3>Basic Plan</h3>
-                    <p>💻 Up to 10 Mbps</p>
-                    <p>📞 24/7 Support</p>
-                    <p>💰 $20/month</p>
-                    <button>Subscribe</button>
-                </div>
-                <div class="package-item">
-                    <h3>Standard Plan</h3>
-                    <p>💻 Up to 50 Mbps</p>
-                    <p>📞 24/7 Support</p>
-                    <p>💰 $50/month</p>
-                    <button>Subscribe</button>
-                </div>
-                <div class="package-item">
-                    <h3>Premium Plan</h3>
-                    <p>💻 Up to 100 Mbps</p>
-                    <p>📞 24/7 Support</p>
-                    <p>💰 $80/month</p>
-                    <button>Subscribe</button>
-                </div>
-        </section>
-        <section id="testimonials">
-            <h2>Testimonials</h2>
-            <div class="testimonials-container">
-                <div class="testimonial">
-                    <img src="./images/Ogola Dan.jpg" alt="Ogola Dan">
-                    <p>"Best ISP I've ever used! Fast and reliable."</p>
-                    <p>- Ogola Dan</p>
-                </div>
-                <div class="testimonial">
-                    <img src="./images/Rama Ochieng'.jpg" alt="Rama Ochieng'">
-                    <p>"Great customer service and affordable plans."</p>
-                    <p>- Rama Ochieng'</p>
-                </div>
-                <div class="testimonial">
-                    <img src="./images/Abdi  Mohamed.jpg" alt="Abdi Mohamed">
-                    <p>"I love the speed and reliability of my internet connection."</p>
-                    <p>- Abdi Mohamed</p>
-                </div>
-                <div class="testimonial">
-                    <img src="./images/Aisha Munene.jpg" alt="Aisha Munene">
-                    <p>"Highly recommend this ISP for anyone looking for quality service."</p>
-                    <p>- Aisha Munene</p>
-                </div>
-            </div>
-        </section>
-        <section id="gallery">
-            <h2>Gallery</h2>
-            <div class="gallery-container">
-                <div class="gallery-item">
-                    <img src="./images/Biometrics.jpg" alt="Image 1">
-                </div>
-                <div class="gallery-item">
-                    <img src="./images/CCTVs.jpg" alt="Image 2">
-                </div>
-                <div class="gallery-item">
-                    <img src="./images/Connection.jpg" alt="Image 3">
-                </div>
-                <div class="gallery-item">
-                    <img src="./images/Installation.jpg" alt="Image 4">
-                </div>
-                <div class="gallery-item">
-                    <img src="./images/LAN installation.jpg" alt="Image 5">
-                </div>
-            </div>
-            </section>
-            <section id="contact">
-                <h2>Contact Us</h2>
-                <p>If you have any questions, feel free to reach out!</p>
-                <div class="contact-form-container">
-                    <form id="contact-form">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required><br>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required><br>
-                        <label for="phone">Phone Number:</label>
-                        <input type="tel" id="phone" name="phone" placeholder="e.g., +254708679439" required><br>
-                        <label for="location">Location:</label>
-                        <input type="text" id="location" name="location" placeholder="Your City/Address" required><br>
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" required></textarea><br>
-                        <button type="submit">Send</button>
-                    </form>
-                </div>
-            </section>
+        <div id="newElementContainer"></div>
     </main>
-    <script src="./script.js">
-        console.log("Hello World");
-    </script>
-</body>
     <footer>
-        <p>&copy; 2025 Nido Networks Limited. All rights reserved.</p>
-        <p>Call us: <a href="tel:+254708679439">+254 716 789 381 or +254 715 740 979 </a></p>
+        <p>© 2025 DOM Manipulation. Miss Maggie</p>
     </footer>
+    <script src="script.js"></script>
+</body>
 </html>
-
